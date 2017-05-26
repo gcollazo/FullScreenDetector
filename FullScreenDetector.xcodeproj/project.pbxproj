@@ -17,6 +17,8 @@
 		4D9B8D2C16AB4C380074C98E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9B8D0C16AB4C380074C98E /* Cocoa.framework */; };
 		4D9B8D4416AB50BE0074C98E /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9B8D4316AB50BE0074C98E /* Carbon.framework */; };
 		4D9B8D4916AB65240074C98E /* MDCFullScreenDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9B8D4816AB65240074C98E /* MDCFullScreenDetector.m */; };
+		7DD972B61ED8E21F0055F7DF /* AppIcon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 7DD972B51ED8E21F0055F7DF /* AppIcon.iconset */; };
+		7DD972B81ED8EF720055F7DF /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7DD972B71ED8EF720055F7DF /* alarm.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		4D9B8D4316AB50BE0074C98E /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		4D9B8D4716AB65240074C98E /* MDCFullScreenDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCFullScreenDetector.h; sourceTree = "<group>"; };
 		4D9B8D4816AB65240074C98E /* MDCFullScreenDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCFullScreenDetector.m; sourceTree = "<group>"; };
+		7DD972B51ED8E21F0055F7DF /* AppIcon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = AppIcon.iconset; sourceTree = "<group>"; };
+		7DD972B71ED8EF720055F7DF /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 		4D9B8D1316AB4C380074C98E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7DD972B71ED8EF720055F7DF /* alarm.mp3 */,
+				7DD972B51ED8E21F0055F7DF /* AppIcon.iconset */,
 				4D9B8D1416AB4C380074C98E /* FullScreenDetector-Info.plist */,
 				4D9B8D1516AB4C380074C98E /* InfoPlist.strings */,
 				4D9B8D1816AB4C380074C98E /* main.m */,
@@ -186,6 +192,11 @@
 				CLASSPREFIX = MDC;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Mark Christian";
+				TargetAttributes = {
+					4D9B8D0716AB4C380074C98E = {
+						DevelopmentTeam = TDWEG935T6;
+					};
+				};
 			};
 			buildConfigurationList = 4D9B8D0216AB4C380074C98E /* Build configuration list for PBXProject "FullScreenDetector" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -210,9 +221,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD972B61ED8E21F0055F7DF /* AppIcon.iconset in Resources */,
 				4D9B8D1716AB4C380074C98E /* InfoPlist.strings in Resources */,
 				4D9B8D1D16AB4C380074C98E /* Credits.rtf in Resources */,
 				4D9B8D2316AB4C380074C98E /* MainMenu.xib in Resources */,
+				7DD972B81ED8EF720055F7DF /* alarm.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +371,7 @@
 				CODE_SIGN_ENTITLEMENTS = FullScreenDetector/FullScreenDetector.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TDWEG935T6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks\"",
@@ -379,6 +393,7 @@
 				CODE_SIGN_ENTITLEMENTS = FullScreenDetector/FullScreenDetector.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TDWEG935T6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks\"",
